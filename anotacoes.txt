@@ -1,0 +1,11 @@
+Com a tag audio como está no inicio do projeto (sem o controls dentro da tag) não é possível reproduzir os áudios, porém, com o controls, aparece a barrinha de áudio padrão e essa barrinha não costuma ser fácil de mudar com o CSS ou, até mesmo, impossível dependendo do caso. Nesse caso é preciso fazer essa interação entre os botões e os áudios com o JavaScript.
+
+Para utilizar o JavaScript no HTML é só usar a tag <script></script>, onde é possível utilizar os comandos do JavaScript dentro da tag ou utilizar um arquivo externo, para isso é só passar <script src="nome_do_arquivo.js"></script> e fazer o código no arquivo que está no campo src. Por padrão é preciso dar o nome do arquivo principal de JavaScript de main.js.
+
+Para buscar um elemento em uma página é só utilizar o DevTools. Com o DevTools é possível entender como as coisas funcionam no navegador e fazer testes para garantir que está tudo funcionando normalmente. O que é feito no DevTools não é salvo no arquivo, então mudanças feitas por lá não vão alterar o projeto.
+
+Para selecionar algo com o JavaScript é só utilizar o document.querySelector('Passar o que deve ser Selecionado (Como uma classe, tag ou id)'). Para tag é só usar o nome da tag, para classes precisa passar o . antes do nome da classe e se for um id é preciso passar a # antes do nome do id.
+
+document.querySelector('input[type="tel"]') -> Dessa forma o input do type tal é selecionado
+
+é possível acessar a função onclick atraves do JavaScript da seguinte forma: document.querySelector('.tecla_pom').onclick = tocaSomPom. E a função chamada dentro desse onclick não pode ter parenteses, pois, dessa forma, em JavaScript a função só é chamada quando o usuario interage com a página.

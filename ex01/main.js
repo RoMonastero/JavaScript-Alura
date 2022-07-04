@@ -1,0 +1,1 @@
+document.querySelector('input[type="tel"]') //Dessa forma o input do type tal é selecionado
