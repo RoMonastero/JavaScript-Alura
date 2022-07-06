@@ -9,3 +9,20 @@ Para selecionar algo com o JavaScript é só utilizar o document.querySelector('
 document.querySelector('input[type="tel"]') -> Dessa forma o input do type tal é selecionado
 
 é possível acessar a função onclick atraves do JavaScript da seguinte forma: document.querySelector('.tecla_pom').onclick = tocaSomPom. E a função chamada dentro desse onclick não pode ter parenteses, pois, dessa forma, em JavaScript a função só é chamada quando o usuario interage com a página.
+
+Uma referencia deve ser declarada com base no que deve receber e, ai sim, receber um nome e um tipo (exemplo: pode ser uma variavel ou algo constante).
+
+Com a função onkeydown é possível capturar uma tecla sendo pressionada e o onkeyup é para capturar quando a tecla para de ser pressionada
+
+Forma de limitar quais teclas podem ser acionadas no onkeydown:
+const listaDeTeclas = document.querySelectorAll('.tecla')
+const tecla = listaDeTeclas[count]
+tecla.onkeydown = function (evento) {
+        if(evento.code === "Enter" || evento.code === "Space") {
+            tecla.classList.add('ativa')
+        }
+    }
+
+O == compara o valor e o === compara o valor e o tipo da variavel
+
+Existem duas formas de comparar se um elemento é nulo no JavaScript, da forma padrão elemento != nulo ou simplemente elemento
