@@ -26,3 +26,27 @@ tecla.onkeydown = function (evento) {
 O == compara o valor e o === compara o valor e o tipo da variavel
 
 Existem duas formas de comparar se um elemento é nulo no JavaScript, da forma padrão elemento != nulo ou simplemente elemento
+
+A função addEventListener mostra o que depende de um evento do usuario, como o clique na tela, e precisa passar oq será feito apos esse evento. Exemplo:
+document.querySelector('#robotron').addEventListener('click', dizOi) (O dizOi é uma função que não tem os parenteses, pois, dessa forma, só será chamada após o usuario fazer alguma ação e não logo que a tela carregar)
+
+No JavaScript é possível criar funcoes anonimas, exemplo:
+function(){
+    console.log('cliquei no robo') 
+} (é possível perceber que é uma função sem nome, então ela só pode ser utilizada quando é criada e não pode chamar em outros lugares)
+ou
+() => {
+    console.log('cliquei no robo') 
+}
+
+Outra forma de chamra a funcao anonima é utilizando os parametros pra ver os eventos da funcao:
+(evento) => {
+    console.log(evento)
+}
+
+O target mostra onde o eventoe está acontecendo 
+
+É possível criar atributos no HTML para serem usados no JavaScript, é só passar isso na tag: data-NomeAtributo="OqueOAtributoRecebe"
+referencia no JavaScript: const controle = document.querySelectorAll('[data-NomeAtributo]')
+
+pegando informações de um data- é so usar .dataset.controle (no exemplo utilizado se usa apos o target)
